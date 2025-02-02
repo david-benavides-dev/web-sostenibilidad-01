@@ -1,23 +1,168 @@
-h1 {
-    color: #4CAF50;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Variables con los colores */
+/* TODO */
+
+:root {
+    --color-seccion1: #1f2421;
+    --color-seccion2: #49a078;
+    --color-seccion3: 
+
 }
 
-section {
-    line-height: 1.6;
-    padding: 0 20px;
-    color: #2E7D32;
-}
-
-p {
-    line-height: 1.6;
-    padding: 0 20px;
-    color: #2E7D32;
-}
-
-body {
-    background-color: #212121;
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+    scroll-behavior: smooth;
 }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: #1f2421;
+}
+
+header .logo {
+    margin: 25px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+header ul {
+    margin: 35px;
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+header ul li.active a,
+header ul li:hover a {
+    color: #49a078;
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #1f2421;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+#home .content {
+    animation: fadeIn 1s ease-out forwards;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 650px;
+    z-index: 10;
+    top: -10vh;
+}
+
+#home .content h2 {
+    position: relative;
+    font-size: 5em;
+    color: #49a078;
+}
+
+#home .content p {
+    position: relative;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+#objetivos {
+    position: relative;
+    background-color: #1f2421;
+    min-height: 100vh;
+    padding: 120px, 100px;
+}
+
+#sobreagenda {
+    position: relative;
+    background-color: #49a078;
+    min-height: 100vh;
+    padding: 120px, 100px;
+}
+
+#contacto {
+    position: relative;
+    background-color: #5387ae;
+    min-height: 50vh;
+    padding: 120px, 100px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(146% + 1.3px);
+    height: 349px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: #49a078;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    font-size:1.25em;
+    max-width: 200px;
+    background-color: #49a078;
+    color: #fff;
+    text-align: center;;
+    padding: 18px 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
