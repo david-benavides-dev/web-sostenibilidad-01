@@ -45,7 +45,7 @@ git clone https://github.com/david-benavides-dev/web-sostenibilidad-01
 
 2. Abrir el archivo `index.html` en cualquier navegador.
 
->> También es posible acceder al sitio web desplegado mediante el siguiente enlace: https://david-benavides-dev.github.io/web-sostenibilidad-01/
+> También es posible acceder al sitio web desplegado mediante el siguiente enlace: https://david-benavides-dev.github.io/web-sostenibilidad-01/
 
 ## Posibles mejoras futuras
 
