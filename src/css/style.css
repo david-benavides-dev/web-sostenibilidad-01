@@ -142,11 +142,12 @@ header ul li:hover a {
 .btn {
     position: relative;
     display: inline-block;
-    font-size:1.25em;
+    font-size: 1.25em;
     max-width: 200px;
     background-color: #49a078;
     color: #fff;
-    text-align: center;;
+    text-align: center;
+    ;
     padding: 18px 30px;
     font-weight: 500;
     letter-spacing: 0.05em;
@@ -156,11 +157,84 @@ header ul li:hover a {
 
 @keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(-20px);
+        opacity: 0;
+        transform: translateY(-20px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
+
+footer {
+    min-height: 40vh;
+    background-color: beige;
+    color: #1f2421;
+    padding: 50px 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #49a078;
+}
+
+.footer-box p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: #49a078;
+    font-weight: bold;
+}
+
+.btn-footer {
+    display: inline-block;
+    background-color: #49a078;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.footer-box input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-box button {
+    background-color: #49a078;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
