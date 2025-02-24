@@ -52,8 +52,8 @@ git clone https://github.com/david-benavides-dev/web-sostenibilidad-01
 - Implementar diseño responsive.
 - Integrar JavaScript para interactividad.
 
-Autores
+## Autores
 
-- David
-- Victor
-- Jose
+- David Benavides Foncubierta
+- Víctor Gómez Tejada
+- José Antonio Díaz Busati
