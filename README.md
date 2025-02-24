@@ -32,9 +32,9 @@ Este sitio web ofrece información resumida sobre la **Agenda 2030**, un plan in
 ## Secciones del Sitio Web
 
 1. **Inicio:** Presentación de la Agenda 2030.
-2. **Sobre la Agenda:** Explicación detallada de los objetivos.
-3. **Objetivos:** Información sobre los ODS.
-4. **Contacto:** Sección para información adicional.
+2. **Sobre la Agenda:** Explicación algo más detallada de la Agenda
+3. **Objetivos:** Información resumida de los ODS.
+4. **Contacto:** Sección de créditos y otros.
 
 ## Cómo visualizar el proyecto
 
