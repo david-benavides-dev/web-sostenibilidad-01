@@ -2,9 +2,7 @@
 
 ## Descripción
 
-Este es un sitio web informativo sobre la **Agenda 2030**, un plan de acción internacional con 17 Objetivos de Desarrollo Sostenible (ODS) diseñados para erradicar la pobreza, proteger el planeta y garantizar el bienestar global para 2030.
-
-Este sitio web ha sido creado para el **proyecto de sostenibilidad**, donde pretendemos crear un servidor web utilizando una **Raspberry Pi** y una **placa solar**. La página pretende ser una pequeña landing con información resumida sobre la Agenda 2030.
+Este sitio web ofrece información resumida sobre la **Agenda 2030**, un plan internacional con 17 Objetivos de Desarrollo Sostenible (ODS) que buscan erradicar la pobreza, proteger el planeta y garantizar el bienestar global para 2030. Ha sido creado como parte de un proyecto de sostenibilidad que incluye la implementación de un servidor web utilizando una **Raspberry Pi** y una **placa solar** para promover la eficiencia energética.
 
 ## Tecnologías utilizadas
 
