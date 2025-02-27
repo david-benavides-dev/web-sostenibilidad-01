@@ -80,7 +80,7 @@ header ul li:hover a {
     gap: 15px;
     max-width: 650px;
     z-index: 10;
-    top: -10vh;
+    top: -0vh;
 }
 
 #home .content h2 {
@@ -96,19 +96,36 @@ header ul li:hover a {
     line-height: 1.6em;
 }
 
-#objetivos {
-    position: relative;
-    background-color: #1f2421;
-    min-height: 100vh;
-    padding: 120px, 100px;
-}
-
 #sobreagenda {
     position: relative;
     background-color: #49a078;
     min-height: 100vh;
-    padding: 120px, 100px;
+    padding: 10px, 100px;
+    justify-content: center;
+    flex-direction: column;
 }
+
+#objetivos {
+    position: relative;
+    background-color: #1f2421;
+    min-height: 100vh;
+    padding-top: 50px; /* Ajusta según sea necesario */
+    justify-content: center;
+    flex-direction: column;
+}
+
+#objetivos h1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #49a078;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4em; /* Ajusta según sea necesario */
+    
+}
+
 
 #contacto {
     position: relative;
@@ -210,5 +227,79 @@ footer {
     margin: 5px;
     text-decoration: none;
     color: #49a078;
+    font-weight: bold;
+}
+
+.ods-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.ods-box {
+    background: #49a078;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ods-box:hover {
+    background: #72a486;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+
+    min-height: 10vh;
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Barra superior del modal */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #49a078;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.close {
+    font-size: 1.5em;
+    cursor: pointer;
     font-weight: bold;
 }
