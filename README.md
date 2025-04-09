@@ -23,11 +23,12 @@ Este sitio web ofrece información resumida sobre la **Agenda 2030**, un plan in
 📂 web-sostenibilidad-01
 │── 📂 src
 │   ├── 📂 css
-│   │   ├── style.css   # Hoja de estilos
+│   │   └── style.css     # Hoja de estilos
 │   ├── 📂 js
-│   │   ├── script.js   # Archivo de JavaScript
-│── index.html          # Página principal
-│── README.md           # Documentación
+│   │   ├── script.js     # Lógica principal (con lazy loading)
+│   │   └── objetivos.js  # Módulo de datos de los ODS (carga diferida)
+│── index.html            # Página principal
+│── README.md             # Documentación
 ```
 
 ## Secciones del Sitio Web
