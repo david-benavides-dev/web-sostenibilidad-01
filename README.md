@@ -11,7 +11,7 @@ Este sitio web ofrece información resumida sobre la **Agenda 2030**, un plan in
 
 ## Paleta de colores y tipografía
 
-- Colores principales:
+- Colores:
   - Fondo principal: #1f2421
   - Color destacado: #49a078
   - Color de contacto: #f5f5dc
