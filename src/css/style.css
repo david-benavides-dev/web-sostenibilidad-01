@@ -1,13 +1,18 @@
+/* Importación de la fuente "Open Sans" desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* Variables con los colores */
-/* TODO */
-
+/* Variables CSS para reutilización de colores */
 :root {
     --color-seccion1: #1f2421;
     --color-seccion2: #49a078;
 }
 
+/* Ajuste global del desplazamiento para evitar que los elementos anclados queden ocultos por el header fijo (fix de desplazamiento) */
+html {
+    scroll-padding-top: 107px; /* Ajusta este valor según la altura de tu header */
+}
+
+/* Estilos base para todos los elementos */
 * {
     margin: 0;
     padding: 0;
@@ -16,12 +21,16 @@
     scroll-behavior: smooth;
 }
 
+/* ---------------------- */
+/*        HEADER          */
+/* ---------------------- */
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px, 100px;
+    padding: 5px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +38,7 @@ header {
     background-color: #1f2421;
 }
 
+/* LOGO/TITLE del header */
 header .logo {
     margin: 25px;
     position: relative;
@@ -38,6 +48,7 @@ header .logo {
     font-size: 2em;
 }
 
+/* Nav (menu header) */
 header ul {
     margin: 35px;
     position: relative;
@@ -56,11 +67,16 @@ header ul li a {
     font-size: 1.25em;
 }
 
+/* Estado activo/hover del menú */
 header ul li.active a,
 header ul li:hover a {
     color: #49a078;
 }
 
+
+/* ---------------------- */
+/*        SECCIÓN HOME    */
+/* ---------------------- */
 #home {
     position: relative;
     width: 100%;
@@ -72,6 +88,7 @@ header ul li:hover a {
     padding: 100px;
 }
 
+/* Contenido del home animado (maybe quitar) */
 #home .content {
     animation: fadeIn 1s ease-out forwards;
     position: relative;
@@ -96,20 +113,49 @@ header ul li:hover a {
     line-height: 1.6em;
 }
 
+/* ---------------------- */
+/*    SECCIÓN SOBREAGENDA */
+/* ---------------------- */
 #sobreagenda {
     position: relative;
     background-color: #49a078;
     min-height: 100vh;
-    padding: 10px, 100px;
+    display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
 }
 
+.sobreagenda-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.sobreagenda-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.sobreagenda-content p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-style: italic;
+}
+
+
+/* ---------------------- */
+/*       OBJETIVOS        */
+/* ---------------------- */
 #objetivos {
     position: relative;
     background-color: #1f2421;
     min-height: 100vh;
-    padding-top: 50px; /* Ajusta según sea necesario */
+    padding-top: 50px;
     justify-content: center;
     flex-direction: column;
 }
@@ -122,18 +168,22 @@ header ul li:hover a {
     color: #49a078;
     align-items: center;
     flex-direction: column;
-    font-size: 4em; /* Ajusta según sea necesario */
-    
+    font-size: 4em;
 }
 
-
+/* ---------------------- */
+/*        CONTACTO        */
+/* ---------------------- */
 #contacto {
     position: relative;
     background-color: #5387ae;
     min-height: 50vh;
-    padding: 120px, 100px;
+    padding: 120px 100px;
 }
 
+/* ---------------------- */
+/*         WAVE           */
+/* ---------------------- */
 .wave {
     position: absolute;
     bottom: 0;
@@ -156,6 +206,9 @@ header ul li:hover a {
     fill: #49a078;
 }
 
+/* ---------------------- */
+/*          BOTÓN         */
+/* ---------------------- */
 .btn {
     position: relative;
     display: inline-block;
@@ -172,6 +225,9 @@ header ul li:hover a {
     margin-top: 10px;
 }
 
+/* ---------------------- */
+/*        ANIMACIONES     */
+/* ---------------------- */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -184,6 +240,9 @@ header ul li:hover a {
     }
 }
 
+/* ---------------------- */
+/*         FOOTER         */
+/* ---------------------- */
 footer {
     min-height: 40vh;
     background-color: beige;
@@ -222,6 +281,7 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Enlaces del footer */
 .socials a {
     display: inline-block;
     margin: 5px;
@@ -230,6 +290,9 @@ footer {
     font-weight: bold;
 }
 
+/* ---------------------- */
+/*     OBJETIVOS ODS      */
+/* ---------------------- */
 .ods-container {
     padding-top: 50px;
     display: grid;
@@ -257,7 +320,9 @@ footer {
     background: #72a486;
 }
 
-/* Modal */
+/* ---------------------- */
+/*          MODAL         */
+/* ---------------------- */
 .modal {
     display: none;
     position: fixed;
@@ -266,14 +331,13 @@ footer {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(5px);
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
+    margin: 5px;
     background: white;
-
     min-height: 10vh;
     width: 50%;
     max-width: 500px;
@@ -282,7 +346,6 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Barra superior del modal */
 .modal-header {
     display: flex;
     justify-content: space-between;
@@ -290,7 +353,6 @@ footer {
     background: #49a078;
     color: white;
     padding: 10px 20px;
-
 }
 
 .modal-header h2 {

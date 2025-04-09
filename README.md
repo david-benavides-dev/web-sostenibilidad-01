@@ -12,10 +12,9 @@ Este sitio web ofrece información resumida sobre la **Agenda 2030**, un plan in
 ## Paleta de colores y tipografía
 
 - Colores principales:
-  - Fondo oscuro: #1f2421
-  - Verde destacado: #49a078
-  - Azul contacto: #5387ae
-  - Fondo de contacto: beige
+  - Fondo principal: #1f2421
+  - Color destacado: #49a078
+  - Color de contacto: #f5f5dc
 - Tipografía:
   - Fuente principal: Open Sans
 
@@ -25,6 +24,8 @@ Este sitio web ofrece información resumida sobre la **Agenda 2030**, un plan in
 │── 📂 src
 │   ├── 📂 css
 │   │   ├── style.css   # Hoja de estilos
+│   ├── 📂 js
+│   │   ├── script.js   # Archivo de JavaScript
 │── index.html          # Página principal
 │── README.md           # Documentación
 ```
