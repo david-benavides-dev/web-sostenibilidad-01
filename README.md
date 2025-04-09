@@ -51,7 +51,6 @@ git clone https://github.com/david-benavides-dev/web-sostenibilidad-01
 ## Posibles mejoras futuras
 
 - Implementar diseño responsive.
-- Integrar JavaScript para interactividad.
 
 ## Autores
 
